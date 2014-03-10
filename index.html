@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+	<title>Shopping Check Your List</title>
+	<link rel="stylesheet" href="reset.css">
+	<link rel="stylesheet" href="stylesheet.css">
+	<link href='http://fonts.googleapis.com/css?family=Poller+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Kite+One' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Paprika' rel='stylesheet' type='text/css'>
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
+</head>
+<body>
+	<header>
+		<img id="ImgLg" src="images/ShoppingCart.png"/>
+		<h1>Shopping <span id="ChkClr">Check</span></h1>
+		<h2>"Others Forget But You Won't"</h2>
+		</header>
+	<div class="Mn">
+		<p class="ErrMsg Instructions">Shopping Check is simple yet beautiful. Organize your lists in a categorized way. Simply choose a category or specify one yourself and enter an item.</p>
+		<div class="FnBx">
+			<h2>Enter An Item Below</h2>
+			<form>
+				<label for="Ctgry">Select a Category</label>
+				<select name="Ctgry" id="Ctgry" required>
+					<option value="Select One">Select One</option>
+					<option style="color:red;"value="Other">Other</option>
+					<option value="Dairy">Dairy</option>
+					<option value="Canned Foods">Canned Foods</option>
+					<option value="Fruits and Vegetables">Fruits and Vegetables</option>
+					<option value="Beverages">Beverages</option>
+					<option value="Frozen Food">Frozen Food</option>
+					<option value="Meat">Meat</option>
+				</select>
+				<label for="Other">Enter a Category</label>
+				<input type="text" name="Other" id="Other">
+				<input type="text" name="Item" id="Item" placeholder="Enter an Item" required>
+				<button type="button" id="Add">Add</button>
+				<input type="reset" name="reset" value="Clear All">
+			</form>
+		</div>
+		<div class="LstItm">
+			<div class="ItmWrpr Dairy Hidden">
+			<h3 class="CtgryNm">Dairy<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+			</ul>
+			</div>
+			<div class="ItmWrpr CannedFoods Hidden">
+			<h3 class="CtgryNm">Canned Foods<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+			
+		
+			</ul>
+			</div>
+			<div class="ItmWrpr FruitsVeg Hidden">
+			<h3 class="CtgryNm">Fruits and Vegetables<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+		
+			</ul>
+			</div>
+			<div class="ItmWrpr Beverages Hidden">
+			<h3 class="CtgryNm">Beverages<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+				
+			</ul>
+			</div>
+			<div class="ItmWrpr FrozenFood Hidden">
+			<h3 class="CtgryNm">Frozen Food<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+				
+			</ul>
+			</div>
+			<div class="ItmWrpr Meat Hidden">
+			<h3 class="CtgryNm">Meat<span class='ItmWrprRemove'></span></h3>
+			<ul class="CtgryLst">
+				
+			</ul>
+			</div>
+			
+	</div>
+	</div>
+</body>
+</html>
