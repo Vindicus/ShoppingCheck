@@ -12,3 +12,5 @@ The most interesting part was using the form elements such as the select list an
 
 1) The form elements allows me to manipulate user data using jQuery event listeners and append them to the right category using switch statements
 2) The other interesting part was allowing users to remove and highlight items that are completed using the click event listener, toggleClass, and the remove DOM element functions
+
+Access <a href="http://vindicus.github.io/ShoppingCheck/ ">Shopping Check</a>
